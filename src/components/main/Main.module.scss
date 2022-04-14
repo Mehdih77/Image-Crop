@@ -1,8 +1,8 @@
 .main {
   max-width: 1460px;
-  margin: 48px auto;
+  margin: 148px auto;
   filter: drop-shadow(50px 50px 100px rgba(34, 34, 34, 0.06));
-  background-color: #fff;
+  // background-color: #fff;
   border-radius: 16px;
   .title {
     font-weight: bold;
@@ -10,38 +10,24 @@
     margin-bottom: 64px;
     span {
       font-size: 48px;
-      color: #292929;
+      color: rgba(255, 255, 0, 1);
     }
   }
   .message {
     max-width: 888px;
     margin: 0 auto;
     padding: 48px;
-    .group {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 16px;
-      label {
-        font-size: 20px;
-        color: #292929;
-        margin-bottom: 16px;
-      }
-      input {
-        max-width: 100%;
-        margin-bottom: 24px;
-      }
-    }
     .picTitle {
       display: inline-block;
       font-size: 20px;
-      color: #292929;
+      color: rgba(255, 255, 0, 1);
       margin-bottom: 16px;
     }
     .uploadedPicWrapper {
       width: 100%;
       display: flex;
-      height: 176px;
+      align-items: center;
+      height: 276px;
       border-radius: 16px;
       background-color: #000;
       padding: 16px;
@@ -112,59 +98,9 @@
     }
   }
 }
-/* FORM */
-.formControl {
-  height: 62px;
-  border-radius: 16px;
-  -moz-border-radius: 16px;
-  -webkit-border-radius: 16px;
-  font-size: 24px;
-  font-family: IRANYekan;
-  color: #000;
-  background: rgba(41, 41, 41, 0.05);
-  border: 2px solid rgba(41, 41, 41, 0.15);
-  font-weight: 500;
-  direction: rtl;
-  text-align: right;
-}
-.formControl:enabled {
-  padding: 0px 32px;
-}
-.formControl:focus,
-.formControl.active,
-.formControl.active:enabled {
-  background: rgba(41, 41, 41, 0.15);
-  border: 2px solid rgba(41, 41, 41, 0.3);
-  color: #292929 !important;
-}
-.formControl:hover:not(:focus) {
-  background: rgba(41, 41, 41, 0.1);
-  border: 2px solid rgba(41, 41, 41, 0.2);
-  color: rgba(41, 41, 41, 0.5) !important;
-}
-.formControl::-webkit-input-placeholder {
-  color: rgba(41, 41, 41, 0.5);
-  font-size: 24px;
-  font-weight: 500;
-}
-.formControl:-ms-input-placeholder {
-  color: rgba(41, 41, 41, 0.5);
-  font-size: 24px;
-  font-weight: 500;
-}
-.formControl::-ms-input-placeholder {
-  color: rgba(41, 41, 41, 0.5);
-  font-size: 24px;
-  font-weight: 500;
-}
-.formControl::placeholder {
-  color: rgba(41, 41, 41, 0.5);
-  font-size: 24px;
-  font-weight: 500;
-}
 @media screen and (max-width: 800px) {
   .main {
-    margin: 0px auto;
+    margin: 150px 24px;
     filter: unset;
     .title {
       margin-bottom: 32px;
@@ -174,12 +110,6 @@
     }
     .message {
       padding: 24px;
-      .group {
-        label {
-          font-size: 16px;
-          margin-bottom: 12px;
-        }
-      }
       .btn {
         font-size: 16px;
         width: 100%;
@@ -211,27 +141,5 @@
         }
       }
     }
-  }
-  .formControl {
-    height: 48px;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    font-size: 16px;
-  }
-  .formControl:enabled {
-    padding: 0px 16px;
-  }
-  .formControl::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-  .formControl:-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .formControl::-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .formControl::placeholder {
-    font-size: 16px;
   }
 }

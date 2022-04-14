@@ -14,15 +14,14 @@ export default function Main() {
   return (
     <section className={styles.main}>
       <div className={styles.message}>
-        <span className={styles.picTitle}>تصویر اصلی کمپین</span>
-
+        <span className={styles.picTitle}>تصویر اصلی </span>
         {imageSrc ? (
           <div className={styles.uploadedPicWrapper}>
             <div className={styles.right}>
               <img src={imageSrc} alt="campaign new-campaign" />
             </div>
             <div className={styles.left}>
-              <span>تصویر اصلی کمپین</span>
+              <span>تصویر اصلی </span>
               <div>
                 <span className={styles.gray}>حجم عکس : </span>
                 <span>{changeByteToKByte(attachment[0]?.size)} KB</span>

@@ -52,7 +52,7 @@ function FileUploader({
             فایل خود را بکشید و اینجا رها کنید
             <br />
             <span>و یا آنها را انتخاب نمایید</span>
-            <button className="btn">انتخاب تصویر کمپین</button>
+            <button className="btn">انتخاب تصویر </button>
           </p>
         </section>
       </div>
