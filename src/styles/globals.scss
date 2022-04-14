@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  direction: rtl;
+}
+body {
+  font-weight: 500;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+  padding-right: 0 !important; // cuz of modal
+}
+a {
+  color: initial;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+a,
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:visited,
+button:active,
+button:focus,
+.form-control:focus {
+  outline: none !important;
+  color: inherit;
+}
+*:focus {
+  outline: none !important;
+}
+input.middle:focus {
+  outline-width: 0;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+li {
+  list-style: none;
+}
+.image-cover {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.text__black {
+  color: #292929;
+}
+/* --------------------------------- */
+/*              MODAL                */
+/* --------------------------------- */
+.modal {
+  z-index: 9999;
+  margin-top: 18px;
+  padding: 0 16px;
+}
+.modal::-webkit-scrollbar {
+  width: 0;
+}
+.modal-content {
+  border-radius: 16px;
+  border: none;
+}
+.modal-backdrop {
+  background-color: #000000 !important;
+}
+.modal-backdrop.show {
+  opacity: 0.6 !important;
+}
